@@ -100,3 +100,94 @@ footer {
         padding: 40px 16px;
     }
 }
+
+.hero h1 {
+    font-size: clamp(2.6rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    max-width: 14em;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    max-width: 520px;
+    font-size: 18px;
+    color: var(--apoyo);
+    margin-bottom: 32px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--shedon);
+    color: #fff;
+    padding: 12px 24px;
+    margin: 0 12px 12px 0;
+    border: 1px solid var(--shedon);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton:hover {
+    background-color: var(--principal);
+    border-color: var(--principal);
+    transform: translateY(-2px);
+}
+
+.boton-claro {
+    background-color: transparent;
+    color: var(--principal);
+    border-color: var(--principal);
+}
+
+.boton-claro:hover {
+    background-color: var(--principal);
+    color: var(--secundario);
+}
+
+.beneficios {
+    margin-top: 70px;
+}
+
+.beneficios h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(41, 36, 31, 0.15);
+    border-left: 1px solid rgba(41, 36, 31, 0.15);
+}
+
+.tarjeta {
+    padding: 24px 20px 32px;
+    border-right: 1px solid rgba(41, 36, 31, 0.15);
+    border-bottom: 1px solid rgba(41, 36, 31, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tarjeta:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px);
+}
+
+.tarjeta h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: var(--apoyo);
+}
+
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
