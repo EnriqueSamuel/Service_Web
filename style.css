@@ -2,7 +2,7 @@
 :root {
     --principal: #29241f;
     --secundario: #eee9df;
-    --apoyo: #776f66;
+    --apoyo: #5c544c;
     --shedon: #a9502c;
     --claro: #e0a07f;
 }
@@ -333,4 +333,45 @@ details p {
     .dos-columnas {
         grid-template-columns: 1fr;
     }
+}
+.campo input.invalido,
+.campo select.invalido,
+.campo textarea.invalido {
+    border-color: #b42318;
+}
+
+.campo input.valido,
+.campo select.valido,
+.campo textarea.valido {
+    border-color: #2e7d32;
+}
+
+.respuesta {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+#resultado {
+    margin-top: 32px;
+}
+
+#resultado h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+#resultado ol {
+    list-style: none;
+}
+
+.paso {
+    padding: 10px 0;
+    font-size: 18px;
+    opacity: 0.35;
+    transition: opacity 0.5s;
+}
+
+.paso.listo {
+    opacity: 1;
+    font-weight: 600;
 }
