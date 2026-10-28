@@ -259,3 +259,78 @@ nav ul a.activo {
     font-family: inherit;
     font-size: 16px;
 }
+
+.dos-columnas {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0 16px;
+}
+
+.formulario.ancho {
+    max-width: none;
+}
+
+.campo.check {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 10px;
+}
+
+.campo.check input {
+    width: auto;
+}
+
+.campo.check label {
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.campo.check .error {
+    flex-basis: 100%;
+}
+
+.total {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.preguntas h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+details {
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(41, 36, 31, 0.15);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+details p {
+    margin-top: 8px;
+    color: var(--apoyo);
+}
+
+@media (max-width: 768px) {
+    .dos-columnas {
+        grid-template-columns: 1fr;
+    }
+}

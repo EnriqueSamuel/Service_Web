@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Contacto | Rutapak</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="img/caja.png" alt="Logo de Rutapak" width="32" height="32">
+        Rutapak
+      </a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="rastreo.html">Rastreo</a></li>
+        <li><a href="cotizar.html">Cotizar</a></li>
+        <li><a class="activo" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina">
+      <h1>Contacto</h1>
+      <p>Escríbenos si tienes dudas de un envío o quieres que te ayudemos con una cotización.</p>
+
+      <div class="dos-columnas">
+        <form id="contacto" class="formulario ancho">
+          <div class="fila">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" name="nombre" type="text">
+              <small class="error"></small>
+            </div>
+            <div class="campo">
+              <label for="telefono">Teléfono (10 dígitos)</label>
+              <input id="telefono" name="telefono" type="tel" maxlength="10">
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email">
+            <small class="error"></small>
+          </div>
+
+          <div class="campo">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option value="">Elige un asunto</option>
+              <option>Cotización</option>
+              <option>Problema con un envío</option>
+              <option>Quiero ser cliente frecuente</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <small class="error"></small>
+          </div>
+
+          <div class="campo check">
+            <input type="checkbox" id="aviso" name="aviso">
+            <label for="aviso">Acepto el aviso de privacidad</label>
+            <small class="error"></small>
+          </div>
+
+          <button class="boton" type="submit">Enviar mensaje</button>
+        </form>
+
+        <div class="preguntas">
+          <h2>Preguntas frecuentes</h2>
+          <details open>
+            <summary>¿Qué no puedo enviar?</summary>
+            <p>Líquidos sin sellar y artículos peligrosos.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto tarda mi envío?</summary>
+            <p>De 1 a 5 días hábiles según el servicio que elijas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Rutapak &copy; 2026</p>
+    <p>Proyecto escolar con datos ficticios</p>
+  </footer>
+</body>
+</html>
