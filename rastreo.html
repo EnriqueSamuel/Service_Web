@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Rastreo | Rutapak</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="img/caja.png" alt="Logo de Rutapak" width="32" height="32">
+        Rutapak
+      </a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a class="activo" href="rastreo.html">Rastreo</a></li>
+        <li><a href="cotizar.html">Cotizar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina">
+      <h1>Rastrea tu guía</h1>
+      <p>Escribe los 10 dígitos de tu guía para ver en qué punto va tu paquete. Para probar usa 1234567890.</p>
+
+      <form id="rastreo" class="formulario">
+        <div class="campo">
+          <label for="guia">Número de guía</label>
+          <input id="guia" name="guia" type="text" maxlength="10" inputmode="numeric" placeholder="1234567890" required>
+          <small class="error"></small>
+        </div>
+        <button class="boton" type="submit">Rastrear</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Rutapak &copy; 2026</p>
+    <p>Proyecto escolar con datos ficticios</p>
+  </footer>
+</body>
+</html>

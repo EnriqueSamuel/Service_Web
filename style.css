@@ -206,3 +206,56 @@ footer {
 nav ul a.activo {
     color: var(--claro);
 }
+.formulario {
+    max-width: 520px;
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(41, 36, 31, 0.15);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--principal);
+    background-color: #fff;
+    border: 1px solid var(--apoyo);
+    transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--shedon);
+}
+
+.error {
+    display: block;
+    min-height: 18px;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #b42318;
+}
+
+.formulario button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
