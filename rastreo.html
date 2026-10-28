@@ -24,22 +24,26 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <section class="pagina">
       <h1>Rastrea tu guía</h1>
       <p>Escribe los 10 dígitos de tu guía para ver en qué punto va tu paquete. Para probar usa 1234567890.</p>
 
-      <form id="rastreo" class="formulario">
-        <div class="campo">
-          <label for="guia">Número de guía</label>
-          <input id="guia" name="guia" type="text" maxlength="10" inputmode="numeric" placeholder="1234567890" required>
-          <small class="error"></small>
-        </div>
-        <p class="respuesta"></p>
-        <button class="boton" type="submit">Rastrear</button>
-      </form>
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form id="rastreo" class="formulario">
+            <div class="campo">
+              <label for="guia">Número de guía</label>
+              <input id="guia" name="guia" type="text" maxlength="10" inputmode="numeric" placeholder="1234567890" required>
+              <small class="error"></small>
+            </div>
+            <p class="respuesta"></p>
+            <button class="boton" type="submit">Rastrear</button>
+          </form>
 
-      <div id="resultado"></div>
+          <div id="resultado"></div>
+        </div>
+      </div>
     </section>
   </main>
 

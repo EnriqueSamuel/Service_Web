@@ -24,95 +24,98 @@
     </nav>
   </header>
 
-  <main>
+    <main class="container">
     <section class="pagina">
       <h1>Cotiza tu envío</h1>
       <p>Llena los datos de tu paquete y te damos un precio aproximado.</p>
 
-      <div class="dos-columnas">
-        <form id="cotizar" class="formulario ancho">
-          <div class="fila">
-            <div class="campo">
-              <label for="origen">Ciudad de origen</label>
-              <select id="origen" name="origen">
-                <option value="">Elige una ciudad</option>
-                <option>Tula de Allende</option>
-                <option>Pachuca</option>
-                <option>Ciudad de México</option>
-                <option>Querétaro</option>
-                <option>Puebla</option>
-                <option>Guadalajara</option>
-                <option>Monterrey</option>
-                <option>Mérida</option>
-              </select>
-              <small class="error"></small>
+      <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <form id="cotizar" class="formulario ancho">
+            <div class="row">
+              <div class="campo col-12 col-md-6">
+                <label for="origen">Ciudad de origen</label>
+                <select id="origen" name="origen">
+                  <option value="">Elige una ciudad</option>
+                  <option>Tula de Allende</option>
+                  <option>Pachuca</option>
+                  <option>Ciudad de México</option>
+                  <option>Querétaro</option>
+                  <option>Puebla</option>
+                  <option>Guadalajara</option>
+                  <option>Monterrey</option>
+                  <option>Mérida</option>
+                </select>
+                <small class="error"></small>
+              </div>
+              <div class="campo col-12 col-md-6">
+                <label for="destino">Ciudad de destino</label>
+                <select id="destino" name="destino">
+                  <option value="">Elige una ciudad</option>
+                  <option>Tula de Allende</option>
+                  <option>Pachuca</option>
+                  <option>Ciudad de México</option>
+                  <option>Querétaro</option>
+                  <option>Puebla</option>
+                  <option>Guadalajara</option>
+                  <option>Monterrey</option>
+                  <option>Mérida</option>
+                </select>
+                <small class="error"></small>
+              </div>
             </div>
-            <div class="campo">
-              <label for="destino">Ciudad de destino</label>
-              <select id="destino" name="destino">
-                <option value="">Elige una ciudad</option>
-                <option>Tula de Allende</option>
-                <option>Pachuca</option>
-                <option>Ciudad de México</option>
-                <option>Querétaro</option>
-                <option>Puebla</option>
-                <option>Guadalajara</option>
-                <option>Monterrey</option>
-                <option>Mérida</option>
-              </select>
-              <small class="error"></small>
-            </div>
-          </div>
 
-          <div class="fila">
-            <div class="campo">
-              <label for="peso">Peso (kg)</label>
-              <input id="peso" name="peso" type="number" step="0.1">
-              <small class="error"></small>
+            <div class="row">
+              <div class="campo col-6 col-md-3">
+                <label for="peso">Peso (kg)</label>
+                <input id="peso" name="peso" type="number" step="0.1">
+                <small class="error"></small>
+              </div>
+              <div class="campo col-6 col-md-3">
+                <label for="largo">Largo (cm)</label>
+                <input id="largo" name="largo" type="number">
+                <small class="error"></small>
+              </div>
+              <div class="campo col-6 col-md-3">
+                <label for="ancho">Ancho (cm)</label>
+                <input id="ancho" name="ancho" type="number">
+                <small class="error"></small>
+              </div>
+              <div class="campo col-6 col-md-3">
+                <label for="alto">Alto (cm)</label>
+                <input id="alto" name="alto" type="number">
+                <small class="error"></small>
+              </div>
             </div>
-            <div class="campo">
-              <label for="largo">Largo (cm)</label>
-              <input id="largo" name="largo" type="number">
-              <small class="error"></small>
-            </div>
-            <div class="campo">
-              <label for="ancho">Ancho (cm)</label>
-              <input id="ancho" name="ancho" type="number">
-              <small class="error"></small>
-            </div>
-            <div class="campo">
-              <label for="alto">Alto (cm)</label>
-              <input id="alto" name="alto" type="number">
-              <small class="error"></small>
-            </div>
-          </div>
 
-          <div class="campo check">
-            <span>Servicio:</span>
-            <input type="radio" id="economico" name="servicio" value="economico" checked>
-            <label for="economico">Económico</label>
-            <input type="radio" id="express" name="servicio" value="express">
-            <label for="express">Exprés</label>
-          </div>
+            <div class="campo check">
+              <span>Servicio:</span>
+              <input type="radio" id="economico" name="servicio" value="economico" checked>
+              <label for="economico">Económico</label>
+              <input type="radio" id="express" name="servicio" value="express">
+              <label for="express">Exprés</label>
+            </div>
 
-          <div class="campo check">
-            <input type="checkbox" id="seguro" name="seguro">
-            <label for="seguro">Asegurar mi paquete (+$35)</label>
-          </div>
-          <p class="respuesta"></p>
-          <button class="boton" type="submit">Calcular precio</button>
-        </form>
+            <div class="campo check">
+              <input type="checkbox" id="seguro" name="seguro">
+              <label for="seguro">Asegurar mi paquete (+$35)</label>
+            </div>
+            <p class="respuesta"></p>
+            <button class="boton" type="submit">Calcular precio</button>
+          </form>
+        </div>
 
-        <aside class="tarjeta">
-          <h2>Tu cotización</h2>
-          <p id="total" class="total">$0.00</p>
-          <p id="detalle">Llena el formulario para ver el precio.</p>
-          <p id="historial"></p>
-        </aside>
+        <div class="col-12 col-lg-5">
+          <aside class="tarjeta">
+            <h2>Tu cotización</h2>
+            <p id="total" class="total">$0.00</p>
+            <p id="detalle">Llena el formulario para ver el precio.</p>
+            <p id="historial"></p>
+          </aside>
+        </div>
       </div>
     </section>
   </main>
-
   <footer>
     <p>Rutapak &copy; 2026</p>
     <p>Proyecto escolar con datos ficticios</p>

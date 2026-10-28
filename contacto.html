@@ -24,59 +24,61 @@
     </nav>
   </header>
 
-  <main>
+    <main class="container">
     <section class="pagina">
       <h1>Contacto</h1>
       <p>Escríbenos si tienes dudas de un envío o quieres que te ayudemos con una cotización.</p>
 
-      <div class="dos-columnas">
-        <form id="contacto" class="formulario ancho">
-          <div class="fila">
+      <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <form id="contacto" class="formulario ancho">
+            <div class="row">
+              <div class="campo col-12 col-md-6">
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" name="nombre" type="text">
+                <small class="error"></small>
+              </div>
+              <div class="campo col-12 col-md-6">
+                <label for="telefono">Teléfono (10 dígitos)</label>
+                <input id="telefono" name="telefono" type="tel" maxlength="10">
+                <small class="error"></small>
+              </div>
+            </div>
+
             <div class="campo">
-              <label for="nombre">Nombre completo</label>
-              <input id="nombre" name="nombre" type="text">
+              <label for="correo">Correo</label>
+              <input id="correo" name="correo" type="email">
               <small class="error"></small>
             </div>
+
             <div class="campo">
-              <label for="telefono">Teléfono (10 dígitos)</label>
-              <input id="telefono" name="telefono" type="tel" maxlength="10">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="">Elige un asunto</option>
+                <option>Cotización</option>
+                <option>Problema con un envío</option>
+                <option>Quiero ser cliente frecuente</option>
+              </select>
               <small class="error"></small>
             </div>
-          </div>
 
-          <div class="campo">
-            <label for="correo">Correo</label>
-            <input id="correo" name="correo" type="email">
-            <small class="error"></small>
-          </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+              <small class="error"></small>
+            </div>
 
-          <div class="campo">
-            <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto">
-              <option value="">Elige un asunto</option>
-              <option>Cotización</option>
-              <option>Problema con un envío</option>
-              <option>Quiero ser cliente frecuente</option>
-            </select>
-            <small class="error"></small>
-          </div>
+            <div class="campo check">
+              <input type="checkbox" id="aviso" name="aviso">
+              <label for="aviso">Acepto el aviso de privacidad</label>
+              <small class="error"></small>
+            </div>
+            <p class="respuesta"></p>
+            <button class="boton" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
 
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-            <small class="error"></small>
-          </div>
-
-          <div class="campo check">
-            <input type="checkbox" id="aviso" name="aviso">
-            <label for="aviso">Acepto el aviso de privacidad</label>
-            <small class="error"></small>
-          </div>
-          <p class="respuesta"></p>
-          <button class="boton" type="submit">Enviar mensaje</button>
-        </form>
-
-        <div class="preguntas">
+        <div class="col-12 col-lg-5 preguntas">
           <h2>Preguntas frecuentes</h2>
           <details open>
             <summary>¿Qué no puedo enviar?</summary>
