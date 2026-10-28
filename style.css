@@ -191,3 +191,18 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.pagina h1 {
+    font-size: clamp(2.4rem, 6vw, 3.5rem);
+    margin-bottom: 16px;
+}
+
+.pagina > p {
+    max-width: 520px;
+    color: var(--apoyo);
+    margin-bottom: 40px;
+}
+
+nav ul a.activo {
+    color: var(--claro);
+}
