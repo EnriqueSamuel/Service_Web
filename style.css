@@ -18,6 +18,9 @@ body {
     color: var(--principal);
     font-family: "DM Sans", sans-serif;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,
@@ -80,6 +83,7 @@ nav ul a:hover {
 }
 
 main {
+    flex: 1;
     padding-top: 70px;
     padding-bottom: 70px;
     min-height: 60vh;
@@ -373,4 +377,8 @@ details p {
 .paso.listo {
     opacity: 1;
     font-weight: 600;
+}
+
+footer p {
+    margin: 0;
 }
