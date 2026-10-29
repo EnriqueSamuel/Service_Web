@@ -482,3 +482,101 @@ footer p {
     font-size: 24px;
     margin-bottom: 12px;
 }
+.pagina h1,
+.pagina > p,
+.formulario,
+.pagina aside.tarjeta,
+.preguntas {
+    animation: subir 0.7s ease backwards;
+}
+
+.pagina > p {
+    animation-delay: 0.15s;
+}
+
+.formulario {
+    animation-delay: 0.3s;
+}
+
+.pagina aside.tarjeta,
+.preguntas {
+    animation-delay: 0.45s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pagina h1,
+    .pagina > p,
+    .formulario,
+    .pagina aside.tarjeta,
+    .preguntas {
+        animation: none;
+    }
+}
+.extra h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.extra p {
+    color: var(--apoyo);
+}
+
+.tarjeta .precio {
+    margin-top: 12px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--shedon);
+}
+
+.comparativa {
+    width: 100%;
+    min-width: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(41, 36, 31, 0.15);
+}
+
+.comparativa th,
+.comparativa td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(41, 36, 31, 0.15);
+}
+
+.comparativa thead th {
+    background-color: var(--principal);
+    color: var(--secundario);
+    font-weight: 500;
+}
+
+.comparativa tbody tr {
+    transition: background-color 0.3s;
+}
+
+.comparativa tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.llamado {
+    padding: 40px 32px;
+    background-color: var(--principal);
+}
+
+.llamado h2,
+.llamado p {
+    color: var(--secundario);
+}
+
+.llamado p {
+    margin-bottom: 24px;
+}
+
+.llamado .boton-claro {
+    color: var(--secundario);
+    border-color: var(--secundario);
+}
+
+.llamado .boton-claro:hover {
+    background-color: var(--secundario);
+    color: var(--principal);
+}
