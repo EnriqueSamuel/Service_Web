@@ -29,8 +29,8 @@
       <h1>Rastrea tu guía</h1>
       <p>Escribe los 10 dígitos de tu guía para ver en qué punto va tu paquete. Para probar usa 1234567890.</p>
 
-      <div class="row">
-        <div class="col-12 col-md-8 col-lg-6">
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
           <form id="rastreo" class="formulario">
             <div class="campo">
               <label for="guia">Número de guía</label>
@@ -43,7 +43,57 @@
 
           <div id="resultado"></div>
         </div>
+
+        <div class="col-12 col-lg-5 offset-lg-1">
+          <aside class="tarjeta">
+            <h2>¿Dónde encuentro mi guía?</h2>
+            <ul>
+              <li>En el comprobante que te dieron al entregar tu paquete.</li>
+              <li>En el correo de confirmación de tu envío.</li>
+              <li>En la etiqueta pegada en la caja, junto al código de barras.</li>
+            </ul>
+            <p>Son siempre 10 dígitos y solo números.</p>
+          </aside>
+        </div>
       </div>
+    </section>
+
+    <section class="extra">
+      <h2>Qué significa cada estado</h2>
+      <div class="row g-0 galeria">
+        <article class="tarjeta col-12 col-sm-6 col-lg-3">
+          <h3>Recibido</h3>
+          <p>Tu paquete ya llegó a nuestra sucursal y está registrado en el sistema.</p>
+        </article>
+        <article class="tarjeta col-12 col-sm-6 col-lg-3">
+          <h3>En tránsito</h3>
+          <p>Va en camino a la ciudad de destino. Puede tardar de 1 a 5 días según el servicio.</p>
+        </article>
+        <article class="tarjeta col-12 col-sm-6 col-lg-3">
+          <h3>En reparto</h3>
+          <p>Ya salió con el repartidor y llega el mismo día a la dirección indicada.</p>
+        </article>
+        <article class="tarjeta col-12 col-sm-6 col-lg-3">
+          <h3>Entregado</h3>
+          <p>El paquete ya fue entregado y el envío quedó cerrado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="extra preguntas">
+      <h2>Dudas sobre tu rastreo</h2>
+      <details open>
+        <summary>Mi guía no aparece, ¿qué hago?</summary>
+        <p>Revisa que tenga 10 dígitos y que no lleve letras ni espacios. Si sigue sin aparecer, escríbenos desde la página de contacto.</p>
+      </details>
+      <details>
+        <summary>¿Cada cuánto se actualiza el estado?</summary>
+        <p>Se actualiza cada vez que tu paquete pasa por una sucursal o sale a reparto.</p>
+      </details>
+      <details>
+        <summary>¿Puedo cambiar la dirección de entrega?</summary>
+        <p>Sí, mientras tu paquete no esté en reparto. Contáctanos con tu número de guía.</p>
+      </details>
     </section>
   </main>
 
